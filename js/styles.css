@@ -1,0 +1,5 @@
+.image{
+display: inline-flex;
+flex-direction: row-reverse;
+width: calc(100% - 30px);;
+}

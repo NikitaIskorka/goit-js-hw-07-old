@@ -31,7 +31,7 @@ const makeGallery = ({ url, alt }) => {
 };
 
 const gallery = images.map(makeGallery);
-galleryContainerRef.insertAdjacentHTML('afterbegin', gallery);
+galleryContainerRef.insertAdjacentHTML('afterbegin', gallery.join(''));
 
 // const galleryEl = document.querySelector('#gallery');
 // console.log(galleryEl);

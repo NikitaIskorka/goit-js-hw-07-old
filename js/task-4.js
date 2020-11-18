@@ -23,9 +23,11 @@ const doStuffOnClick = () => {
 };
 
 const decrement = () => {
-  valueRef.textContent > 0
-    ? (valueRef.textContent = valueRef.textContent - 1)
-    : 0;
+  if (valueRef.textContent > 0) {
+    valueRef.textContent = valueRef.textContent - 1;
+  } else {
+    0;
+  }
 };
 const increment = () => {
   valueRef.textContent = Number(valueRef.textContent) + 1;

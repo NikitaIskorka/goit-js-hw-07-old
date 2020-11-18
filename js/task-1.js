@@ -1,11 +1,12 @@
-const listLengthRef = document.querySelectorAll('h2').length
+const listLengthRef = document.querySelectorAll('h2').length;
 console.log(`В списке ${listLengthRef} категории.`);
 
-
 // =======================================
-const listOfItems = document.querySelectorAll('.item',)
+const listOfItems = document.querySelectorAll('.item');
 // console.log(listOfItems);
-listOfItems.forEach(item =>{console.log(`Категория: 
+listOfItems.forEach(item => {
+  console.log(`Категория: 
 ${item.firstElementChild.textContent}
 Количество элементов: 
-${item.lastElementChild.children.length} `);})
+${item.lastElementChild.children.length} `);
+});

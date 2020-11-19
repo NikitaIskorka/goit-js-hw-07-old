@@ -1,10 +1,8 @@
-const input = document.querySelector('#validation-input');
-const length = document.querySelector('[data-length="6"]');
+const fieldRef = document.getElementById('validation-input');
 
-input.addEventListener('focus', onFocus);
-
-function onFocus(event) {
-  event.currentTarget.value.length < length.dataset.length
-    ? input.classList.add('invalid')
-    : input.classList.replace('invalid', 'valid');
-}
+const validValue = fieldRef.dataset.length;
+fieldRef.addEventListener('change', event => {
+  event.target.value.length === +validValue
+    ? fieldRef.setAttribute('class', 'valid')
+    : fieldRef.setAttribute('class', 'invalid');
+});

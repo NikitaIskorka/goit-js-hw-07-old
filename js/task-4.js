@@ -25,8 +25,6 @@ const doStuffOnClick = () => {
 const decrement = () => {
   if (valueRef.textContent > 0) {
     valueRef.textContent = valueRef.textContent - 1;
-  } else {
-    0;
   }
 };
 const increment = () => {
